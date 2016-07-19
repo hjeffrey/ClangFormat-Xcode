@@ -1,6 +1,64 @@
 ---
-BasedOnStyle:  Chromium
-PointerBindsToType: false
+# 基础样式
+BasedOnStyle: LLVM
+
+## 语言方案 LK_Cpp Should be used for C, C++, ObjectiveC, ObjectiveC++.
+Language: Cpp
+
+# 缩进宽度
+IndentWidth: 4
+
+# 圆括号的换行方式
+BreakBeforeBraces: Attach
+
+# 支持一行的if
+AllowShortIfStatementsOnASingleLine: true
+
+# switch的case缩进
+IndentCaseLabels: true
+
+# 针对OC，block的缩进宽度
+ObjCBlockIndentWidth: 4
+
+# 针对OC，属性名后加空格,用 @property (readonly) 替代 @property(readonly)
 ObjCSpaceAfterProperty: true
-SortIncludes: false
+
+# 针对OC，协议名前加空格，用 Foo <Protocol> 替代 Foo<Protocol>
+ObjCSpaceBeforeProtocolList: true
+
+# 每行字符的长度
+ColumnLimit: 80
+
+# 注释对齐
+AlignTrailingComments: true
+
+# 括号后加空格
+SpaceAfterCStyleCast: true
+
+# 不在小括号里加空格
+SpacesInParentheses: false
+
+# 不在中括号里加空格
+SpacesInSquareBrackets: false
+
+# Tab 的宽度
+TabWidth: 4
+
+# 是否使用Tab
+UseTab: Never
+
+# 参数必须一行或者单独一行
+BinPackParameters: false
+
+# 参数换行对齐
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# 允许短方法一行实现
+AllowShortFunctionsOnASingleLine: Empty
+
+# 允许短声明一行实现
+AllowShortIfStatementsOnASingleLine: true
+
+# 
+KeepEmptyLinesAtTheStartOfBlocks: true
 ...
